@@ -1,0 +1,5 @@
+(base) MacBook-Pro-Eric:devops-open-hy ericbanzuzi$ docker ps -a
+CONTAINER ID   IMAGE                          COMMAND                  CREATED              STATUS                      PORTS                NAMES
+7f2917197148   nginx                          "/docker-entrypoint.…"   About a minute ago   Exited (0) 36 seconds ago                        friendly_curie
+6da6432b370f   nginx                          "/docker-entrypoint.…"   About a minute ago   Up About a minute           80/tcp               suspicious_davinci
+73ef35c5eb34   nginx                          "/docker-entrypoint.…"   About a minute ago   Exited (0) 17 seconds ago                        loving_swanson

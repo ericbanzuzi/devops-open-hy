@@ -1,0 +1,21 @@
+Sizes:
+devopsdockeruh/simple-web-service               ubuntu           4e3362e907d5   3 years ago     83MB
+devopsdockeruh/simple-web-service               alpine           fd312adc88e0   3 years ago     15.7MB
+
+Commands:
+(base) MacBook-Pro-Eric:devops-open-hy ericbanzuzi$ docker run -d -it fd312adc88e0
+WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+865db9c7f0a77459409a762c791a8ae10988ce3f11394028a100493f07ea9b34
+
+(base) MacBook-Pro-Eric:devops-open-hy ericbanzuzi$ docker ps
+CONTAINER ID   IMAGE          COMMAND                 CREATED          STATUS          PORTS     NAMES
+865db9c7f0a7   fd312adc88e0   "/usr/src/app/server"   56 seconds ago   Up 55 seconds             stoic_chatterjee
+
+(base) MacBook-Pro-Eric:devops-open-hy ericbanzuzi$ docker exec -it 865db9c7f0a7 sh
+/usr/src/app # tail -f ./text.log
+2024-09-29 10:08:28 +0000 UTC
+2024-09-29 10:08:30 +0000 UTC
+2024-09-29 10:08:32 +0000 UTC
+2024-09-29 10:08:34 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+

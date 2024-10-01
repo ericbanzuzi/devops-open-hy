@@ -1,0 +1,4 @@
+(base) MacBook-Pro-Eric:devops-open-hy ericbanzuzi$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+(base) MacBook-Pro-Eric:devops-open-hy ericbanzuzi$ docker images ls
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
